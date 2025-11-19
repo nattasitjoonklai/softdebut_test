@@ -5,7 +5,7 @@
     node -v
     
 
-## เอกสาร Testcase  :TestScenario_OrageHRM.xlsx
+- เอกสาร Testcase  :TestScenario_OrageHRM.xlsx
     
 ## ขั้นตอนการใช้งาน
 
@@ -28,4 +28,5 @@ npx playwright show-report
 Screenshots และ Video จะถูกเก็บในโฟลเดอร์:
 สำหรับรูปภาพ: test-results/<ลำดับตัวทดสอบ>/<testname>/
 สำหรับวิดีโอ:test-results/<testname>/video.webm
+
 
