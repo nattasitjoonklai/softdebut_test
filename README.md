@@ -6,7 +6,15 @@
     
 
 - เอกสาร Testcase  :TestScenario_OrageHRM.xlsx
+- หลักฐานการรันทดสอบ (Evidence)
+  - ZIP: test-result
+ 
+  - ภาพหน้าจอ (Screenshot) ผลการทดสอบ:test-results/<ลำดับตัวทดสอบ>/<testname>/
+ 
+  - วิดีโอ (Video Recording) ผลการทดสอบ:test-results/<testname>/video.webm
     
+   
+  
 ## ขั้นตอนการใช้งาน
 
 ### 1. Clone โปรเจค
@@ -28,5 +36,7 @@ npx playwright show-report
 Screenshots และ Video จะถูกเก็บในโฟลเดอร์:
 สำหรับรูปภาพ: test-results/<ลำดับตัวทดสอบ>/<testname>/
 สำหรับวิดีโอ:test-results/<testname>/video.webm
+
+
 
 
