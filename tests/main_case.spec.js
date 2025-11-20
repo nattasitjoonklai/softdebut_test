@@ -56,6 +56,7 @@ test('ค้นหาผู้สมัครตามเงื่อนไข',
     expect(vacancy).toBe(searchData.vacancy);
     expect(status).toBe(searchData.status);
   }
+  await page.waitForTimeout(10000)
   //แคปหน้าจอ
   await page.screenshot({ path: 'test-results/1/ค้นหาผู้สมัครตามเงื่อนไข.png' });
 });
@@ -111,6 +112,7 @@ test('เพิ่มข้อมูลผู้สมัครใหม่', as
   // เช็ค button Reject และ Shortlist เพื่อ ยืนยันว่ามาอยู่หน้าโปรไฟล์ของ candidate แล้ว
   await expect(page.getByRole('button', { name: 'Reject' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Shortlist' })).toBeVisible();
+  await page.waitForTimeout(10000)
   // ถ่าย screenshot เมื่อสำเร็จ
   await page.screenshot({ path: 'test-results/2/เพิ่มข้อมูลผู้สมัครใหม่.png' });
 
@@ -188,7 +190,7 @@ test('ตรวจสอบ Validation Errors', async ({ page }) => {
   // เช็ค error message text
   const errorMessages = page.locator('text=Required');
   await expect(errorMessages.first()).toBeVisible();
-
+await page.waitForTimeout(10000)
   // ถ่าย screenshot validation error
   await page.screenshot({ path: 'test-results/4/ตรวจสอบ Validation Errors.png' });
 
@@ -252,7 +254,7 @@ test('ทดสอบการเรียงลำดับข้อมูล',
 
   // ตรวจว่าข้อมูลหน้าถัดไป "เปลี่ยนจริง" โดยเช็คจากข้อมูลของ row แรก
   expect(firstRowTextAfterPagination).not.toBe(firstRowTextBeforePagination);
-
+await page.waitForTimeout(10000)
   // Screenshot 2
   await page.screenshot({ path: 'test-results/5/เปลี่ยนหน้าข้อมูล.png', fullPage: true });
 });

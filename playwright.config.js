@@ -45,29 +45,29 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'setup',
-      testMatch: '**/login_session.spec.js',
-      use: { 
-        ...devices['Desktop Chrome'],
-        headless: true,
-        baseURL: 'https://opensource-demo.orangehrmlive.com/',
-      },
-    },
+    // {
+    //   name: 'setup',
+    //   testMatch: '**/login_session.spec.js',
+    //   use: { 
+    //     ...devices['Desktop Chrome'],
+    //     headless: true,
+    //     baseURL: 'https://opensource-demo.orangehrmlive.com/',
+    //   },
+    // },
 
-    {
-      name: 'chromium',
-      use: { 
-        ...devices['Desktop Chrome'],
-        headless: true, 
-        baseURL: 'https://opensource-demo.orangehrmlive.com/',
+    // {
+    //   name: 'chromium',
+    //   use: { 
+    //     ...devices['Desktop Chrome'],
+    //     headless: true, 
+    //     baseURL: 'https://opensource-demo.orangehrmlive.com/',
        
-      },
-      testIgnore: '**/login_session.spec.js',
-      dependencies: ['setup'],
-    },
+    //   },
+    //   testIgnore: '**/login_session.spec.js',
+    //   dependencies: ['setup'],
+    // },
 {
-      name: 'example',
+      name: 'TestCase',
       testMatch: '**/main_case.spec.js',
       use: { 
         ...devices['Desktop Chrome'],
