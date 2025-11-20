@@ -61,7 +61,7 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
         headless: true, 
         baseURL: 'https://opensource-demo.orangehrmlive.com/',
-        storageState: 'playwright/.auth/user.json',
+       
       },
       testIgnore: '**/login_session.spec.js',
       dependencies: ['setup'],

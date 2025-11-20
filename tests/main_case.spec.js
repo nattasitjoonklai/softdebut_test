@@ -253,8 +253,6 @@ test('ทดสอบการเรียงลำดับข้อมูล',
   // ตรวจว่าข้อมูลหน้าถัดไป "เปลี่ยนจริง" โดยเช็คจากข้อมูลของ row แรก
   expect(firstRowTextAfterPagination).not.toBe(firstRowTextBeforePagination);
 
-
-
   // Screenshot 2
   await page.screenshot({ path: 'test-results/5/เปลี่ยนหน้าข้อมูล.png', fullPage: true });
 });
